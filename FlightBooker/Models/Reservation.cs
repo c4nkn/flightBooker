@@ -1,6 +1,6 @@
 namespace FlightBooker.Models;
 
-public class Booking
+public class Reservation
 {
     public int Id { get; set; }
     public Flight SelectedFlight { get; set; }
