@@ -9,16 +9,17 @@ public class Flight
     // Aircraft Information
     public Aircraft Aircraft { get; set; } = new Aircraft();
     public List<string> AvailableSeats { get; set; } = new List<string>();
+    public List<string> TakenSeats { get; set; } = new List<string>();
     
     // Airport Information
     public Airport Departure { get; set; } = new Airport();
     public Airport Destination { get; set; } = new Airport();
     
     // Time Information
-    public DateTime FlightDate { get; set; }
-    public DateTime FlightTime { get; set; }
-    public DateTime DepartureTime { get; set; }
-    public DateTime ArrivalTime { get; set; }
+    public string FlightDate { get; set; }
+    public string FlightTime { get; set; }
+    public string DepartureTime { get; set; }
+    public string ArrivalTime { get; set; }
     
     public decimal TotalPrice { get; set; }
 }
